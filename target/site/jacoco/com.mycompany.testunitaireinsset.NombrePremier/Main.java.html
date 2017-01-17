@@ -20,18 +20,16 @@ import java.util.Scanner;
 
 <span class="nc" id="L21">        Scanner sc = new Scanner(System.in);</span>
 
-<span class="nc" id="L23">        System.out.println(&quot;Veuillez saisir un nombre :&quot;);</span>
+<span class="nc" id="L23">        String str = sc.nextLine();</span>
+<span class="nc" id="L24">        NombrePremier np = new NombrePremier();</span>
 
-<span class="nc" id="L25">        String str = sc.nextLine();</span>
-<span class="nc" id="L26">        NombrePremier np = new NombrePremier();</span>
-
-<span class="nc bnc" id="L28" title="All 2 branches missed.">        if (np.isNombreValide(str)) {</span>
-<span class="nc" id="L29">            System.out.println(np.afficherResult(np.isPremier(Integer.parseInt(str)), Integer.parseInt(str)));</span>
+<span class="nc bnc" id="L26" title="All 2 branches missed.">        if (np.isNombreValide(str)) {</span>
+<span class="nc" id="L27">            System.out.println(np.formaterResult(np.isPremier(Integer.parseInt(str)), Integer.parseInt(str)));</span>
         } else {
-<span class="nc" id="L31">            System.out.println(&quot;format incorrect&quot;);</span>
+<span class="nc" id="L29">            System.out.println(&quot;format incorrect&quot;);</span>
         }
 
-<span class="nc" id="L34">    }</span>
+<span class="nc" id="L32">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

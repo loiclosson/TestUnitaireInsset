@@ -20,8 +20,6 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Veuillez saisir un nombre :");
-
         String str = sc.nextLine();
         NombrePremier np = new NombrePremier();
 
